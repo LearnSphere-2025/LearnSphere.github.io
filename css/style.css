@@ -578,7 +578,8 @@ section {
 
 .project-detail-header .summary {
     font-size: 1.25rem;
-    opacity: 0.9;
+    color: #F1F5F9;
+    opacity: 1;
 }
 
 .project-detail-content {
