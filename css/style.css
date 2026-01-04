@@ -583,7 +583,7 @@ section {
 }
 
 .project-detail-content {
-    max-width: 800px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 24px 100px;
 }
