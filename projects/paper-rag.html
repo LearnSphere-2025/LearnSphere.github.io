@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paper-RAG: AI Assistant for Academic Writing and Literature Synthesis">
+    <title>Paper-RAG | LearnSphere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">Learn<span>Sphere</span></a>
+            <ul class="nav-links">
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#vision">Vision</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <div class="project-detail">
+        <div class="project-detail-header">
+            <div class="container">
+                <h1>Paper-RAG</h1>
+                <p class="summary">AI Assistant for Academic Writing and Literature Synthesis</p>
+                <div class="project-tags" style="margin-top: 16px;">
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">RAG</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Research</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">LLM</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Education AI</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Content -->
+        <div class="project-detail-content">
+            <h2>Overview</h2>
+            <p>
+                <strong>Paper-RAG</strong> is a research automation system that assists scholars and independent
+                researchers in
+                <strong>literature retrieval, synthesis, and structured writing</strong>.
+            </p>
+            <p>
+                It uses retrieval-augmented generation to ground each writing suggestion in peer-reviewed research.
+            </p>
+
+            <h2>Problem</h2>
+            <p>
+                Researchers spend excessive time searching, summarizing, and contextualizing existing studies —
+                tasks that can be <strong>automated without losing academic rigor</strong>.
+            </p>
+            <p><strong>Paper-RAG</strong> addresses this by integrating:</p>
+            <ul>
+                <li>Contextual retrieval (BM25 + Sentence Embeddings)</li>
+                <li>Claim-based summarization</li>
+                <li>Citation-aware text generation</li>
+            </ul>
+
+            <h2>Architecture</h2>
+            <table>
+                <tr>
+                    <th>Component</th>
+                    <th>Technology</th>
+                </tr>
+                <tr>
+                    <td>Dataset</td>
+                    <td>Curated academic corpus (Scopus + Semantic Scholar API)</td>
+                </tr>
+                <tr>
+                    <td>Embedding Model</td>
+                    <td><code>upskyy/bge-m3-korean</code> for bilingual search</td>
+                </tr>
+                <tr>
+                    <td>Generator</td>
+                    <td>Domain-adaptive LLM fine-tuned for structured abstracts</td>
+                </tr>
+                <tr>
+                    <td>Evaluation</td>
+                    <td>Semantic similarity + RAGAS benchmarking</td>
+                </tr>
+            </table>
+
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Structured Literature Retrieval:</strong> Clustered by topic and research question</li>
+                <li><strong>Citation Anchoring:</strong> Every claim linked to source metadata</li>
+                <li><strong>Outline Assistance:</strong> Auto-generate research gaps, implications, and summaries</li>
+            </ul>
+
+            <h2>Vision</h2>
+            <p>
+                Paper-RAG is a foundation for <strong>AI-assisted scholarly creativity</strong>,
+                helping independent researchers like those at LearnSphere to produce high-quality academic work
+                efficiently.
+            </p>
+
+            <blockquote>
+                "From data to discovery — Paper-RAG redefines how research takes shape in the age of AI."
+            </blockquote>
+
+            <a href="/#projects" class="back-link">← Back to Projects</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 LearnSphere. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

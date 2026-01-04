@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HR-Chatbot: Conversational Assistant for Labor Risk & HR Policy Insights">
+    <title>HR-Chatbot | LearnSphere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">Learn<span>Sphere</span></a>
+            <ul class="nav-links">
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#vision">Vision</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <div class="project-detail">
+        <div class="project-detail-header">
+            <div class="container">
+                <h1>HR-Chatbot</h1>
+                <p class="summary">Conversational Assistant for Labor Risk & HR Policy Insights</p>
+                <div class="project-tags" style="margin-top: 16px;">
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Chatbot</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">RAG</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">FastAPI</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Legal AI</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Content -->
+        <div class="project-detail-content">
+            <h2>Overview</h2>
+            <p>
+                <strong>HR-Chatbot</strong> is an interactive web-based assistant that provides
+                <strong>real-time HR and labor law insights</strong> to professionals, small business owners, and
+                researchers.
+            </p>
+            <p>
+                It builds upon the <a href="hr-rag.html">HR-RAG</a> system to deliver contextual answers,
+                policy summaries, and compliance guidance through natural dialogue.
+            </p>
+
+            <h2>Core Features</h2>
+            <ul>
+                <li><strong>Conversational Q&A</strong> on HR compliance, employee relations, and workplace policy</li>
+                <li><strong>Source-linked responses</strong> — every answer cites retrieved documents for verification
+                </li>
+                <li><strong>Continuous learning loop</strong> — integrates user feedback into retrieval ranking</li>
+                <li><strong>Web Interface</strong> built with FastAPI + Streamlit, connected to a scalable LLM backend
+                </li>
+            </ul>
+
+            <h2>Use Cases</h2>
+            <ul>
+                <li>HR consultants drafting compliance checklists</li>
+                <li>Labor attorneys reviewing recent case precedents</li>
+                <li>Startups managing HR risk without in-house legal staff</li>
+            </ul>
+
+            <h2>Technical Highlights</h2>
+            <table>
+                <tr>
+                    <th>Component</th>
+                    <th>Stack</th>
+                </tr>
+                <tr>
+                    <td>Backend</td>
+                    <td>FastAPI + LangChain + Milvus (vector store)</td>
+                </tr>
+                <tr>
+                    <td>Frontend</td>
+                    <td>Streamlit + Tailwind UI</td>
+                </tr>
+                <tr>
+                    <td>Model</td>
+                    <td>Fine-tuned LLM (KoRAG-base)</td>
+                </tr>
+                <tr>
+                    <td>Deployment</td>
+                    <td>AWS Lambda + GitHub Actions</td>
+                </tr>
+            </table>
+
+            <h2>Future Roadmap</h2>
+            <ul>
+                <li><strong>Adaptive Dialogue Memory</strong> with topic persistence</li>
+                <li><strong>Multi-modal input</strong> (e.g., PDF upload for policy analysis)</li>
+                <li>Integration with <strong>HR-RAG API</strong> for report generation on request</li>
+            </ul>
+
+            <blockquote>
+                "HR-Chatbot brings domain-specific intelligence to workplace conversations — bridging law, policy, and
+                AI."
+            </blockquote>
+
+            <a href="/#projects" class="back-link">← Back to Projects</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 LearnSphere. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

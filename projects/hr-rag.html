@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HR-RAG: Retrieval-Augmented AI for Automated HR Reports">
+    <title>HR-RAG | LearnSphere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">Learn<span>Sphere</span></a>
+            <ul class="nav-links">
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#vision">Vision</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <div class="project-detail">
+        <div class="project-detail-header">
+            <div class="container">
+                <h1>HR-RAG</h1>
+                <p class="summary">Retrieval-Augmented AI for Automated HR Reports</p>
+                <div class="project-tags" style="margin-top: 16px;">
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">RAG</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">LLM</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">HR</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Automation</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Content -->
+        <div class="project-detail-content">
+            <h2>Overview</h2>
+            <p>
+                <strong>HR-RAG</strong> is a retrieval-augmented generation (RAG) system designed to support HR analysts
+                and compliance researchers in <strong>automating policy report generation</strong>.
+            </p>
+            <p>
+                It connects a curated knowledge base of labor law documents, HR guidelines, and precedent reports
+                with large language models optimized for structured reasoning.
+            </p>
+
+            <h2>Objectives</h2>
+            <ul>
+                <li>Reduce manual drafting time for HR and compliance documents</li>
+                <li>Improve consistency and legal accuracy in report writing</li>
+                <li>Provide explainable outputs with document traceability</li>
+            </ul>
+
+            <h2>Architecture</h2>
+            <ul>
+                <li><strong>Retrieval Layer:</strong> Dense and hybrid search (BM25 + Sentence Transformer)</li>
+                <li><strong>Augmentation Layer:</strong> Context packaging with citation tagging</li>
+                <li><strong>Generation Layer:</strong> Fine-tuned LLM with HR-specific prompt templates</li>
+            </ul>
+            <p>
+                🧠 The pipeline is designed for <em>high factual precision</em> and <em>low hallucination rate</em>,
+                leveraging RAG-as-a-Service integration.
+            </p>
+
+            <h2>Results</h2>
+            <ul>
+                <li><strong>~70% reduction</strong> in report drafting time</li>
+                <li><strong>Significant improvement</strong> in factual accuracy vs. base LLM output</li>
+                <li>Positive feedback from domain experts in HR policy and labor compliance</li>
+            </ul>
+
+            <h2>Next Steps</h2>
+            <ul>
+                <li>Integrate multilingual retrieval (KR–EN cross-lingual support)</li>
+                <li>Deploy as an internal API for the <a href="hr-chatbot.html">HR-Chatbot</a> project</li>
+                <li>Release an open demo on LearnSphere Labs (Q2 2026)</li>
+            </ul>
+
+            <blockquote>
+                "From policy documents to structured insight — HR-RAG transforms manual reporting into intelligent
+                synthesis."
+            </blockquote>
+
+            <a href="/#projects" class="back-link">← Back to Projects</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 LearnSphere. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
