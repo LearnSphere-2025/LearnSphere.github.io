@@ -5,30 +5,35 @@
 /* ===== CSS Variables (Color Palette) ===== */
 :root {
     /* Primary Colors */
-    --primary: #1B365D;         /* Deep Blue - 연구, 신뢰 */
-    --accent: #50C2C9;          /* Mint Blue - 혁신, 창의성 */
-    --highlight: #FFD166;       /* Yellow - 포인트 */
-    
+    --primary: #1B365D;
+    /* Deep Blue - 연구, 신뢰 */
+    --accent: #50C2C9;
+    /* Mint Blue - 혁신, 창의성 */
+    --highlight: #FFD166;
+    /* Yellow - 포인트 */
+
     /* Neutral Colors */
-    --neutral-light: #F8FAFC;   /* 배경 */
-    --neutral-dark: #1E293B;    /* 본문 */
+    --neutral-light: #F8FAFC;
+    /* 배경 */
+    --neutral-dark: #1E293B;
+    /* 본문 */
     --white: #FFFFFF;
     --gray-100: #F1F5F9;
     --gray-200: #E2E8F0;
     --gray-300: #CBD5E1;
     --gray-600: #475569;
-    
+
     /* Typography */
     --font-main: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-code: 'JetBrains Mono', 'Fira Code', monospace;
-    
+
     /* Spacing */
     --section-padding: 100px 0;
     --container-max: 1100px;
     --card-radius: 12px;
     --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);
     --shadow-hover: 0 8px 24px rgba(27, 54, 93, 0.12);
-    
+
     /* Transitions */
     --transition: all 0.3s ease;
 }
@@ -46,7 +51,9 @@
 }
 
 /* ===== Reset & Base ===== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -87,16 +94,34 @@ img {
 }
 
 /* ===== Typography ===== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     line-height: 1.3;
     color: var(--primary);
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.25rem; margin-bottom: 1rem; }
-h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
-h4 { font-size: 1.25rem; }
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
 
 p {
     margin-bottom: 1rem;
@@ -221,8 +246,15 @@ p {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 /* ===== Buttons ===== */
@@ -415,12 +447,12 @@ section {
 }
 
 .vision-quote {
-    font-size: 1.5rem;
-    font-style: italic;
+    font-size: 1.125rem;
+    font-style: normal;
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.8;
-    opacity: 0.95;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .vision-quote strong {
@@ -480,40 +512,51 @@ section {
 
 /* ===== Responsive ===== */
 @media (max-width: 968px) {
+
     .hero-content,
     .about-grid,
     .contact-content {
         grid-template-columns: 1fr;
     }
-    
+
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .hero-visual {
         order: -1;
     }
-    
+
     .hero-sphere {
         width: 250px;
         height: 250px;
     }
-    
-    h1 { font-size: 2.5rem; }
-    .hero-text h1 { font-size: 2.75rem; }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.75rem;
+    }
 }
 
 @media (max-width: 640px) {
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .nav-links {
         display: none;
     }
-    
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.75rem; }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
 }
 
 /* ===== Project Detail Page ===== */
