@@ -34,12 +34,12 @@
         <div class="project-detail-header">
             <div class="container">
                 <h1>Paper-RAG</h1>
-                <p class="summary">AI Assistant for Academic Writing and Literature Synthesis</p>
+                <p class="summary">AI Co-researcher for Full-cycle Academic Writing</p>
                 <div class="project-tags" style="margin-top: 16px;">
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Multi-Agent</span>
                     <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">RAG</span>
-                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Research</span>
                     <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">LLM</span>
-                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Education AI</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Research Ops</span>
                 </div>
             </div>
         </div>
@@ -48,24 +48,26 @@
         <div class="project-detail-content">
             <h2>Overview</h2>
             <p>
-                <strong>Paper-RAG</strong> is a research automation system that assists scholars and independent
-                researchers in
-                <strong>literature retrieval, synthesis, and structured writing</strong>.
-            </p>
-            <p>
-                It uses retrieval-augmented generation to ground each writing suggestion in peer-reviewed research.
+                <strong>Paper-RAG</strong> is an <strong>AI Co-researcher System</strong> designed to support the entire
+                research lifecycle.
+                It automates the workflow from <strong>literature acquisition and analysis</strong> to related
+                <strong>research design, drafting, and quality assurance</strong>,
+                enabling researchers to focus on creative discovery.
             </p>
 
             <h2>Problem</h2>
             <p>
-                Researchers spend excessive time searching, summarizing, and contextualizing existing studies —
-                tasks that can be <strong>automated without losing academic rigor</strong>.
+                Researchers spend excessive time on manual literature review, synthesis, and formatting,
+                which limits the resources available for critical thinking and creative research design.
             </p>
-            <p><strong>Paper-RAG</strong> addresses this by integrating:</p>
+            <p><strong>Paper-RAG</strong> addresses this with a comprehensive <strong>5-Phase Agent Workflow</strong>:
+            </p>
             <ul>
-                <li>Contextual retrieval (BM25 + Sentence Embeddings)</li>
-                <li>Claim-based summarization</li>
-                <li>Citation-aware text generation</li>
+                <li><strong>Multi-Agent System:</strong> Specialized agents (Research Design, Draft, Style Check) for
+                    each
+                    phase.</li>
+                <li><strong>Contextual RAG:</strong> Evidence-based generation with precise citation anchoring.</li>
+                <li><strong>Automated QA:</strong> Real-time verification for citations, style, and consistency.</li>
             </ul>
 
             <h2>Architecture</h2>
@@ -76,38 +78,46 @@
                 </tr>
                 <tr>
                     <td>Dataset</td>
-                    <td>Curated academic corpus (Scopus + Semantic Scholar API)</td>
+                    <td>PDF Papers + Targeted Retrieval (arXiv/OpenAlex)</td>
                 </tr>
                 <tr>
-                    <td>Embedding Model</td>
-                    <td><code>upskyy/bge-m3-korean</code> for bilingual search</td>
+                    <td>LLM & VLM</td>
+                    <td>Upstage Solar Pro, Qwen 2.5 (Agent), Gemini Flash (Vision)</td>
+                </tr>
+                <tr>
+                    <td>Retrieval</td>
+                    <td>Hybrid (Dense + BM25) + Hierarchical Chunking</td>
                 </tr>
                 <tr>
                     <td>Generator</td>
-                    <td>Domain-adaptive LLM fine-tuned for structured abstracts</td>
+                    <td>Section-based Fusion Writer (APA 7th Style)</td>
                 </tr>
                 <tr>
                     <td>Evaluation</td>
-                    <td>Semantic similarity + RAGAS benchmarking</td>
+                    <td>RAGAS Metrics + Citation/Style Verification Agents</td>
                 </tr>
             </table>
 
             <h2>Key Features</h2>
             <ul>
-                <li><strong>Structured Literature Retrieval:</strong> Clustered by topic and research question</li>
-                <li><strong>Citation Anchoring:</strong> Every claim linked to source metadata</li>
-                <li><strong>Outline Assistance:</strong> Auto-generate research gaps, implications, and summaries</li>
+                <li><strong>Phase 1 (Research Design):</strong> Deep PDF parsing & VLM analysis, automated Gap Analysis,
+                    and RQ formulation.</li>
+                <li><strong>Phase 2 (Draft):</strong> Citation-backed section writing using Solar Pro models.</li>
+                <li><strong>Phase 3 (Style Check):</strong> Automated verification of citations, academic style, and
+                    terminology.</li>
             </ul>
+
+
 
             <h2>Vision</h2>
             <p>
-                Paper-RAG is a foundation for <strong>AI-assisted scholarly creativity</strong>,
-                helping independent researchers like those at LearnSphere to produce high-quality academic work
-                efficiently.
+                Paper-RAG embodies the motto <strong>"From Data to Discovery"</strong>, redefining how research takes
+                shape
+                by fostering collaboration between human creativity and AI efficiency.
             </p>
 
             <blockquote>
-                "From data to discovery — Paper-RAG redefines how research takes shape in the age of AI."
+                "An end-to-end AI partner that transforms how we discover, design, and write research."
             </blockquote>
 
             <a href="/#projects" class="back-link">← Back to Projects</a>

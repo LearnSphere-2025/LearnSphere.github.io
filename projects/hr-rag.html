@@ -48,49 +48,54 @@
         <div class="project-detail-content">
             <h2>Overview</h2>
             <p>
-                <strong>HR-RAG</strong> is a retrieval-augmented generation (RAG) system designed to support HR analysts
-                and compliance researchers in <strong>automating policy report generation</strong>.
+                <strong>HR-RAG</strong> is a specialized <strong>Retrieval-Augmented Generation (RAG)</strong> system
+                designed
+                to automate the creation of professional legal and HR strategy reports (e.g., Response Strategy for the
+                "Yellow Envelope Law").
             </p>
             <p>
-                It connects a curated knowledge base of labor law documents, HR guidelines, and precedent reports
-                with large language models optimized for structured reasoning.
+                It integrates <strong>Upstage Document AI</strong> for high-fidelity parsing, <strong>Solar Pro/GPT-4o
+                    LLMs</strong> for reasoning,
+                and a robust <strong>Hybrid Search (Vector + BM25)</strong> pipeline with <strong>Reranking</strong>
+                to deliver highly accurate and context-aware outputs.
             </p>
 
-            <h2>Objectives</h2>
+            <h2>System Architecture</h2>
             <ul>
-                <li>Reduce manual drafting time for HR and compliance documents</li>
-                <li>Improve consistency and legal accuracy in report writing</li>
-                <li>Provide explainable outputs with document traceability</li>
+                <li><strong>Parsing (Document AI):</strong> Uses <em>Upstage Layout Analysis</em> to preserve complex
+                    table structures and headers, ensuring no semantic loss during extraction.</li>
+                <li><strong>Indexing (Hybrid):</strong> Combines <strong>Solar Embedding</strong> (Semantic) and
+                    <strong>BM25</strong> (Keyword/Entity) to capture both nuance and exact matches.</li>
+                <li><strong>Retrieval & Generation:</strong>
+                    Hybrid Search (0.7 Vector + 0.3 BM25) retrieves candidates, followed by <strong>BGE-M3
+                        Reranking</strong>
+                    to refine the Top-60 results into the precise Top-5 for the LLM.
+                </li>
             </ul>
 
-            <h2>Architecture</h2>
+            <h2>Performance & Optimization</h2>
             <ul>
-                <li><strong>Retrieval Layer:</strong> Dense and hybrid search (BM25 + Sentence Transformer)</li>
-                <li><strong>Augmentation Layer:</strong> Context packaging with citation tagging</li>
-                <li><strong>Generation Layer:</strong> Fine-tuned LLM with HR-specific prompt templates</li>
-            </ul>
-            <p>
-                🧠 The pipeline is designed for <em>high factual precision</em> and <em>low hallucination rate</em>,
-                leveraging RAG-as-a-Service integration.
-            </p>
-
-            <h2>Results</h2>
-            <ul>
-                <li><strong>~70% reduction</strong> in report drafting time</li>
-                <li><strong>Significant improvement</strong> in factual accuracy vs. base LLM output</li>
-                <li>Positive feedback from domain experts in HR policy and labor compliance</li>
+                <li><strong>Precision Boost:</strong> Implementation of the BGE-M3 Reranker significantly improved Top-5
+                    context relevance.</li>
+                <li><strong>Efficiency:</strong> <strong>Incremental Indexing</strong> logic automatically detects
+                    processed files, reducing API costs and boosting execution speed by over 10x.</li>
+                <li><strong>Validation:</strong> Proven effectiveness in generating detailed compliance reports from
+                    complex PDF inputs.</li>
             </ul>
 
-            <h2>Next Steps</h2>
+            <h2>Future Roadmap</h2>
             <ul>
-                <li>Integrate multilingual retrieval (KR–EN cross-lingual support)</li>
-                <li>Deploy as an internal API for the <a href="hr-chatbot.html">HR-Chatbot</a> project</li>
-                <li>Release an open demo on LearnSphere Labs (Q2 2026)</li>
+                <li><strong>Section-based Chunking:</strong> Utilizing layout header hierarchy for better context
+                    preservation (vs. simple character splitting).</li>
+                <li><strong>Metadata Filtering:</strong> Enabling filtered search by document year, type (Case Law vs.
+                    Statute), and jurisdiction.</li>
+                <li><strong>Query Expansion:</strong> Implementing advanced query rewriting to handle ambiguous user
+                    intents.</li>
             </ul>
 
             <blockquote>
-                "From policy documents to structured insight — HR-RAG transforms manual reporting into intelligent
-                synthesis."
+                "From precise table parsing to hybrid retrieval — HR-RAG transforms static legal documents into dynamic,
+                actionable insights."
             </blockquote>
 
             <a href="/#projects" class="back-link">← Back to Projects</a>
