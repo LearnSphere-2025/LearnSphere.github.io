@@ -571,6 +571,11 @@ section {
     margin-bottom: 60px;
 }
 
+.project-detail-header .container {
+    max-width: 800px;
+    padding: 0 24px;
+}
+
 .project-detail-header h1 {
     color: white;
     margin-bottom: 16px;
@@ -583,7 +588,7 @@ section {
 }
 
 .project-detail-content {
-    max-width: var(--container-max);
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 24px 100px;
 }
